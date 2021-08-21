@@ -1,0 +1,89 @@
+<template>
+<div>
+      <h4 class="text-center mt-20">
+       <small>
+         <button class="btn btn-success" v-on:click="navigate()"> View All Posts </button>
+       </small>
+    </h4>
+        <div class="col-md-12 form-wrapper">
+          <h2> Edit Post </h2>
+          <form id="edit-post-form" @submit.prevent="editPost">
+            <div class="form-group col-md-12">
+                <label for="title"> Title </label>
+                <input type="text" id="title" v-model="post.title" name="title" class="form-control" placeholder="Enter title">
+            </div>
+            <div class="form-group col-md-12">
+                <label for="description"> Description </label>
+                <input type="text" id="description" v-model="post.description" name="description" class="form-control" placeholder="Enter Description">
+            </div>
+            <div class="form-group col-md-12">
+                <label for="body"> Write Content </label>
+                <textarea id="body" cols="30" rows="5" v-model="post.body" class="form-control"></textarea>
+            </div>
+            <div class="form-group col-md-12">
+                <label for="author"> File </label>
+                <img v-if="post.file.length != 0" :src="'data:image/jpeg;base64,'+post.file" alt="Logo" width="200px" height="200px">
+            </div>
+            <div class="form-group col-md-12">
+                <label for="author"> Author </label>
+                <input type="text" id="author" v-model="post.author" name="author" class="form-control">
+            </div>
+            
+            <div class="form-group col-md-4 pull-right">
+                <button class="btn btn-success" type="submit"> Edit Post </button>
+            </div>
+          </form>
+        </div>
+    </div>
+</template>
+
+<script>
+import { server } from "../../utils/helper";
+import axios from "axios";
+import router from "../../router";
+import qs from 'qs';
+export default {
+  data() {
+    return {
+      id: 0,
+      post: {}
+    };
+  },
+  created() {
+    this.id = this.$route.params.id;
+    this.getPost();
+  },
+  methods: {
+    editPost() {
+      let postData = {
+        id: this.id,
+        title: this.post.title,
+        description: this.post.description,
+        body: this.post.body,
+        author: this.post.author,
+        date_posted: this.post.date_posted
+      };
+
+      axios
+        .post(`${server.baseURL}/posts/create/`, qs.stringify(postData), {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+            //'Content-Type': 'multipart/form-data; charset=utf-8; boundary=' + Math.random().toString().substr(2)
+          }
+        })
+        .then(data => {
+          router.push({ name: "home" });
+        });
+    },
+    getPost() {
+      axios
+        .get(`${server.baseURL}/posts/getDetail/${this.id}`)
+        .then(data => (this.post = data.data));
+    },
+    navigate() {
+      router.go(-1);
+    }
+  }
+};
+</script>
+
