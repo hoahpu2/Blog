@@ -1,0 +1,1307 @@
+2021-08-17 12:24:12 Error: [ParseError] syntax error, unexpected 'die' (T_EXIT), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /cakephp/
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 C:\xampp\htdocs\cakephp\app\Controller\PagesController.php(31): spl_autoload_call('AppController')
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(567): include('C:\\xampp\\htdocs...')
+#3 [internal function]: App::load('PagesController')
+#4 [internal function]: spl_autoload_call('PagesController')
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(266): class_exists('PagesController')
+#6 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2021-08-17 12:24:12 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2021-08-17 12:24:12 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /cakephp/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 05:55:25 Error: [Error] Call to a member function find() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 [internal function]: PostsController->index()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 05:55:52 Error: [Error] Call to a member function find() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 [internal function]: PostsController->index()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 05:56:23 Error: [Error] Call to a member function find() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 [internal function]: PostsController->index()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 06:07:41 Error: [MissingViewException] View file "Posts\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\index')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 06:09:04 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:09:25 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:10:30 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:10:30 Error: Fatal Error (1): Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php, line 649]
+2021-08-19 06:10:30 Error: [FatalErrorException] Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:11:51 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:11:51 Error: Fatal Error (1): Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php, line 649]
+2021-08-19 06:11:51 Error: [FatalErrorException] Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:12:45 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:12:45 Error: Fatal Error (1): Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php, line 649]
+2021-08-19 06:12:45 Error: [FatalErrorException] Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:12:46 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:12:46 Error: Fatal Error (1): Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php, line 649]
+2021-08-19 06:12:46 Error: [FatalErrorException] Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:13:45 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:21:41 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:23:19 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:23:37 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:23:48 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:24:04 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:24:04 Error: Fatal Error (1): Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php, line 649]
+2021-08-19 06:24:04 Error: [FatalErrorException] Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:24:35 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:24:35 Error: Fatal Error (1): Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php, line 649]
+2021-08-19 06:24:35 Error: [FatalErrorException] Uncaught Error: Call to a member function init() on null in C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php:649
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Controller\CakeErrorController.php(47): Controller->constructClasses()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(157): CakeErrorController->__construct(Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(MissingControllerException))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(126): ExceptionRenderer->__construct(Object(MissingControllerException))
+#4 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#5 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 649, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:25:38 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:25:38 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 201]
+2021-08-19 06:25:38 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:26:06 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:26:26 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:26:26 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 201]
+2021-08-19 06:26:26 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:29:14 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:29:26 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:29:50 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:30:33 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:30:33 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 201]
+2021-08-19 06:30:33 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:30:49 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:30:49 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 201]
+2021-08-19 06:30:49 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:33:21 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:33:21 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 201]
+2021-08-19 06:33:21 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:33:39 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:33:39 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 201]
+2021-08-19 06:33:39 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:34:40 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:35:07 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:35:24 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:35:24 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 201]
+2021-08-19 06:35:24 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:37:10 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:37:48 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:38:35 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:39:16 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:39:16 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 201]
+2021-08-19 06:39:16 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:201
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->_cakeError(Object(MissingControllerException))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(MissingControllerException))
+#3 {main}
+  thrown
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 201, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 06:44:07 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:45:28 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 06:46:26 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 08:39:26 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/post/1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 08:39:30 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/post/1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 09:04:46 Error: [ParseError] syntax error, unexpected ';'
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(266): class_exists('PostsController')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-08-19 09:04:46 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:250
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->error500(Object(ParseError))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(ParseError))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 250]
+2021-08-19 09:04:46 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:250
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->error500(Object(ParseError))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(ParseError))
+#3 {main}
+  thrown
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 250)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 250, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 09:05:01 Error: [ParseError] syntax error, unexpected ';'
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(266): class_exists('PostsController')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-08-19 09:05:01 Error: Fatal Error (1): Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:250
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->error500(Object(ParseError))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(ParseError))
+#3 {main}
+  thrown in [C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php, line 250]
+2021-08-19 09:05:01 Error: [FatalErrorException] Uncaught Error: Call to a member function here() on null in C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php:250
+Stack trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ExceptionRenderer.php(190): ExceptionRenderer->error500(Object(ParseError))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(127): ExceptionRenderer->render()
+#2 [internal function]: ErrorHandler::handleException(Object(ParseError))
+#3 {main}
+  thrown
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 250)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', 'C:\\xampp\\htdocs...', 250, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2021-08-19 09:05:07 Error: [ParseError] syntax error, unexpected ';'
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(266): class_exists('PostsController')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-08-19 09:05:24 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:06:54 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:06:55 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:06:55 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:06:56 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:06:56 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:07:36 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:07:37 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:07:37 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:07:38 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:07:38 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:07:38 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:07:39 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:07:51 Error: [MissingViewException] View file "Posts\create.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\create.ctp',
+)
+Request URL: /cakephp/posts/create
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\create')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:09:01 Error: [MissingViewException] View file "Posts\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\index')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 09:09:05 Error: [MissingViewException] View file "Posts\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\index')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 10:19:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'newEntity' at line 1
+Request URL: /cakephp/posts/create/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('newEntity', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('newEntity', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('newEntity', Array, Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('newEntity', Array, Object(Posts))
+#5 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(62): Model->__call('newEntity', Array)
+#6 [internal function]: PostsController->create()
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-08-19 10:20:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'newEntity' at line 1
+Request URL: /cakephp/posts/create/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('newEntity', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('newEntity', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('newEntity', Array, Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('newEntity', Array, Object(Posts))
+#5 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(62): Model->__call('newEntity', Array)
+#6 [internal function]: PostsController->create()
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-08-19 10:20:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'newEntity' at line 1
+Request URL: /cakephp/posts/create/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('newEntity', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('newEntity', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('newEntity', Array, Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('newEntity', Array, Object(Posts))
+#5 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(62): Model->__call('newEntity', Array)
+#6 [internal function]: PostsController->create()
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-08-19 10:20:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'newEntity' at line 1
+Request URL: /cakephp/posts/create/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('newEntity', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('newEntity', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('newEntity', Array, Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('newEntity', Array, Object(Posts))
+#5 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(62): Model->__call('newEntity', Array)
+#6 [internal function]: PostsController->create()
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-08-19 10:20:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'newEntity' at line 1
+Request URL: /cakephp/posts/create/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('newEntity', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('newEntity', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('newEntity', Array, Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('newEntity', Array, Object(Posts))
+#5 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(62): Model->__call('newEntity', Array)
+#6 [internal function]: PostsController->create()
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-08-19 10:25:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /cakephp/posts/create/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `bl...')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Posts), Array, Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(76): Model->save(Array)
+#6 [internal function]: PostsController->create()
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-08-19 10:25:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /cakephp/posts/create/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `bl...')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Posts), Array, Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(76): Model->save(Array)
+#6 [internal function]: PostsController->create()
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-08-19 10:26:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /cakephp/posts/create/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `bl...')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Posts), Array, Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(76): Model->save(Array)
+#6 [internal function]: PostsController->create()
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-08-19 10:55:22 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/post/1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 10:55:31 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/post/1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 10:55:33 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/post/1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 11:11:30 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/post/3
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 11:11:45 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/post/3
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 11:16:35 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/edit?postID=3
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-19 12:33:55 Error: [MissingActionException] Action PostsController::getCommentByPost() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'getCommentByPost',
+)
+Request URL: /cakephp/posts/getCommentByPost
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-08-19 12:34:10 Error: [MissingActionException] Action PostsController::getCommentByPost() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'getCommentByPost',
+)
+Request URL: /cakephp/posts/getCommentByPost?id_post=
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-08-19 12:34:13 Error: [MissingActionException] Action PostsController::getCommentByPost() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'getCommentByPost',
+)
+Request URL: /cakephp/posts/getCommentByPost?id_post=
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-08-19 12:34:22 Error: [MissingActionException] Action PostsController::getCommentByPost() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'getCommentByPost',
+)
+Request URL: /cakephp/posts/getCommentByPost?id_post=11
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-08-19 12:35:09 Error: [MissingViewException] View file "Posts\get_comment_by_post.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\get_comment_by_post.ctp',
+)
+Request URL: /cakephp/posts/getCommentByPost/id_post=11
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\get_comme...')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 12:35:12 Error: [MissingViewException] View file "Posts\get_comment_by_post.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\get_comment_by_post.ctp',
+)
+Request URL: /cakephp/posts/getCommentByPost/11
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\get_comme...')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 12:35:38 Error: [MissingViewException] View file "Posts\get_comment_by_post.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\get_comment_by_post.ctp',
+)
+Request URL: /cakephp/posts/getCommentByPost/11
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\get_comme...')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 13:01:03 Error: [MissingViewException] View file "Posts\delete_post.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete_post.ctp',
+)
+Request URL: /cakephp/posts/deletePost/5
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\delete_po...')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 13:01:05 Error: [MissingViewException] View file "Posts\delete_post.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete_post.ctp',
+)
+Request URL: /cakephp/posts/deletePost/5
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\delete_po...')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 13:01:28 Error: [MissingViewException] View file "Posts\delete_post.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete_post.ctp',
+)
+Request URL: /cakephp/posts/deletePost/5
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\delete_po...')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-19 13:02:34 Error: [MissingViewException] View file "Posts\delete_post.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete_post.ctp',
+)
+Request URL: /cakephp/posts/deletePost/5
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName('Posts\\delete_po...')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-20 09:51:12 Error: [Error] Call to undefined method PaginatorComponent::params()
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 [internal function]: PostsController->index()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-20 09:55:14 Error: [NotFoundException] Not Found
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(58): PaginatorComponent->paginate(Object(Posts))
+#1 [internal function]: PostsController->index()
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-08-20 09:56:04 Error: [NotFoundException] Not Found
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(58): PaginatorComponent->paginate(Object(Posts))
+#1 [internal function]: PostsController->index()
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-08-20 10:09:15 Error: [Error] Call to a member function count() on array
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 [internal function]: PostsController->index()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-20 10:09:45 Error: [Error] Call to a member function count() on array
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 [internal function]: PostsController->index()
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
