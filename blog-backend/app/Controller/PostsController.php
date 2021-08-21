@@ -66,7 +66,7 @@ class PostsController extends Controller {
         $data['data'] = $a_GetAllPosts;
         $data['totalPage'] = ceil($count/$this->paginate['limit']);
         $data['currentPage'] = $_GET['page'];
-        // xx($data);
+        
         echo json_encode($data);
     }
 
@@ -141,7 +141,6 @@ class PostsController extends Controller {
     }
 
     public function deletePost($id){
-        echo $id;
         $this->layout = 'ajax';
         $this->render(false);
         $this->Comments->deleteAll([
